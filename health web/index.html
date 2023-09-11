@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js"></script>
+    <!-- ------bootstrap------ -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    <!-- -------Font--------- -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+</head>
+
+<body>
+    <!-- ------------------header---------------- -->
+    <div class="container-fluid header-container">
+        <div class="row">
+            <div class="col-sm-3 header-left">
+                <img src="./logo.webp" alt="">
+            </div>
+            <div class="col-sm-9 header-right">
+                <div>
+                    <img src="./logo-2.png" class="logo-2" alt="">
+                </div>
+                <div class="header-book">
+                    <div class="header-icon">
+                        <img src="./book.png" alt="">
+                    </div>
+                    <div class="header-icon-info">
+                        <div class="header-icon-info-head">
+                            Second Medical Opinion
+                        </div>
+                        <div class="header-icon-info-content">
+                            Book Consultation
+                        </div>
+                    </div>
+                </div>
+                <div class="header-book">
+                    <div class="header-icon">
+                        <img src="./call-icon.png" alt="">
+                    </div>
+                    <div class="header-icon-info">
+                        <div class="header-icon-info-head">
+                            Call Us On
+                        </div>
+                        <div class="header-icon-info-content">
+                            85465 78749
+                        </div>
+                    </div>
+                </div>
+                <div class="header-book">
+                    <div class="header-icon">
+                        <img src="./book.png" alt="">
+                    </div>
+                    <div class="header-icon-info">
+                        <div class="header-icon-info-head">
+                            Email Us On
+                        </div>
+                        <div class="header-icon-info-content">
+                            info@mediretreats.com
+                        </div>
+                    </div>
+                </div>
+                <div class="header-flag">
+                    <button onclick="button()" class="lang-btn">
+                        <img src="./flag.png" alt="">
+                        <i class="fa-solid fa-angle-down"></i>
+                    </button>
+                    <div id="dropdown-flag">
+                        <button>
+                            <img src="./flag.png" alt="">
+                        </button>
+                        <button>
+                            <img src="./flag.png" alt="">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -------------------MENU------------------ -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background: #1badff!important; padding: 0px 100px!important;">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse nav-div" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item ">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="#">About Us <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Treatment
+              </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Destination
+              </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="#">Hospital <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="#">FAQ <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="#">Blog <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="#">Request A Quote <span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+            <div class="search-div">
+                <div class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+                <input type="text" value="Search">
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- -------------------------banner------------------------------ -->
+    <div class="container-fluid banner">
+        <div class="row">
+            <div class="col-lg-5 cols-sm-12 banner-col">
+                <div class="accordian">
+                    <h5>Home</h5>
+                    <i class="fa-solid fa-angle-right"></i>
+                    <h5>Treatment</h5>
+                    <i class="fa-solid fa-angle-right"></i>
+                    <h5>Orthopaedics</h5>
+                    <i class="fa-solid fa-angle-right"></i>
+                    <h5>Knee Replacemnt</h5>
+                </div>
+                <h1 class="banner-heading">Total Knee Replacement</h1>
+                <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa illum consequatur dolor expedita nemo perferendis?</h6>
+                <button>Enquire Now</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ------------------------sub-menu------------------------- -->
+    <div class="sub-menu">
+        <a href="#overview">Overview</a>
+        <a href="#eligibility">Eligibility</a>
+        <a href="#prepration">Preparation</a>
+        <a href="#about">About Treatment</a>
+        <a href="#post">Post-Treatment Care</a>
+        <a href="#recovery">Recovery Tip</a>
+        <a href="#">FAQs </a>
+        <a href="#">Patient Stories</a>
+    </div>
+
+    <!-- ----------------------Treatment Overview------------------ -->
+    <div class="container-fluid treatment-container" id="overview">
+        <div class="row">
+            <div class="col-sm-6">
+                <h1 style="font-size: 35px; padding-bottom: 20px;">Treatment Overview</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit voluptatum inventore ducimus quo non commodi quisquam sint natus nostrum. Voluptas.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum fugit, quibusdam quia sunt iusto quae corrupti accusamus reiciendis aliquid veniam commodi laboriosam suscipit asperiores eligendi. Exercitationem excepturi adipisci saepe
+                    quis ut expedita. Natus quibusdam cumque a laboriosam minima commodi sed.</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem pariatur dolorum totam impedit voluptas voluptatem facere beatae. Omnis, quo explicabo! Nemo quos minus eveniet alias molestias quas beatae explicabo! Cum!</p>
+            </div>
+            <div class="col-sm-6">
+                <img src="./teatment.png" class="treatment-img" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid treatment-container">
+        <div class="row">
+            <div class="col-sm-9">
+                <div class="container">
+                    <div class="row">
+                        <!-- -----------Elegibility------------ -->
+                        <div class="col-sm-12" style="padding: 45px 0px; border-bottom: 1px dashed blue;" id="eligibility">
+                            <h1 style="font-size: 35px; padding-bottom: 20px;">Elegibility For Treatment </h1>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero ipsa hic quo aspernatur debitis dolores temporibus obcaecati odit, minima ut accusamus quis dolore explicabo? Doloremque rerum neque sed id autem tempore dolore
+                                minima voluptate voluptatem. Ipsum, quisquam enim libero sed nesciunt qui sequi. Voluptatum, voluptate?</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <p><i class="fa-regular fa-circle" style="color:blue; padding: 0px 10px;"></i>Lorem ipsum dolor sit amet consectetur.</p>
+                            <p><i class="fa-regular fa-circle" style="color:blue; padding: 0px 10px;"></i>Lorem ipsum dolor sit, amet consectetur aceat ad atque expedita, ratione sint pariatur?</p>
+                            <p><i class="fa-regular fa-circle" style="color:blue; padding: 0px 10px;"></i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, voluptatem!</p>
+                        </div>
+
+                        <!----------------- prepration--------------- -->
+
+                        <div class="col-sm-12" style="padding: 45px 0px; border-bottom: 1px dashed blue;" id="prepration">
+                            <h1 style="font-size: 35px; padding-bottom: 20px;">Prepration Before Treatment </h1>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero ipsa hic quo aspernatur debitis dolores temporibus obcaecati odit, minima ut accusamus quis dolore explicabo? Doloremque rerum neque sed id autem tempore dolore minima voluptate voluptatem.
+                            Ipsum, quisquam enim libero sed nesciunt qui sequi. Voluptatum, voluptate?</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <p><i class="fa-regular fa-circle" style="color:blue; padding: 0px 10px;"></i>Lorem ipsum dolor sit amet consectetur.</p>
+                            <p><i class="fa-regular fa-circle" style="color:blue; padding: 0px 10px;"></i>Lorem ipsum dolor sit, amet consectetur aceat ad atque expedita, ratione sint pariatur?</p>
+                            <p><i class="fa-regular fa-circle" style="color:blue; padding: 0px 10px;"></i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, voluptatem!</p>
+                        </div>
+
+                        <!----------------- About Treatment--------------- -->
+
+                        <div class="col-sm-12" style="padding: 45px 0px; border-bottom: 1px dashed blue;" id="about">
+                            <h1 style="font-size: 35px; padding-bottom: 20px;">About Treatment</h1>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero ipsa hic quo aspernatur debitis dolores temporibus obcaecati odit, minima ut accusamus quis dolore explicabo? Doloremque rerum neque sed id autem tempore dolore minima voluptate voluptatem.
+                            Ipsum, quisquam enim libero sed nesciunt qui sequi. Voluptatum, voluptate?</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <p><i class="fa-regular fa-circle" style="color:blue; padding: 0px 10px;"></i>Lorem ipsum dolor sit amet consectetur.</p>
+                            <p><i class="fa-regular fa-circle" style="color:blue; padding: 0px 10px;"></i>Lorem ipsum dolor sit, amet consectetur aceat ad atque expedita, ratione sint pariatur?</p>
+                            <p><i class="fa-regular fa-circle" style="color:blue; padding: 0px 10px;"></i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, voluptatem!</p>
+                        </div>
+
+                        <!----------------- Post Treatment--------------- -->
+
+                        <div class="col-sm-12" style="padding: 45px 0px; border-bottom: 1px dashed blue;" id="post">
+                            <h1 style="font-size: 35px; padding-bottom: 20px;">Post Treatment Care Treatment</h1>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero ipsa hic quo aspernatur debitis dolores temporibus obcaecati odit, minima ut accusamus quis dolore explicabo? Doloremque rerum neque sed id autem tempore dolore minima voluptate voluptatem.
+                            Ipsum, quisquam enim libero sed nesciunt qui sequi. Voluptatum, voluptate?</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <p><i class="fa-regular fa-circle" style="color:blue; padding: 0px 10px;"></i>Lorem ipsum dolor sit amet consectetur.</p>
+                            <p><i class="fa-regular fa-circle" style="color:blue; padding: 0px 10px;"></i>Lorem ipsum dolor sit, amet consectetur aceat ad atque expedita, ratione sint pariatur?</p>
+                            <p><i class="fa-regular fa-circle" style="color:blue; padding: 0px 10px;"></i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, voluptatem!</p>
+                        </div>
+
+                        <!-----------------Treatment Recovery Tip--------------- -->
+
+                        <div class="col-sm-12" style="padding: 45px 0px; border-bottom: 1px dashed blue;" id="recovery">
+                            <h1 style="font-size: 35px; padding-bottom: 20px;">Treatment Recovery Tip</h1>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero ipsa hic quo aspernatur debitis dolores temporibus obcaecati odit, minima ut accusamus quis dolore explicabo? Doloremque rerum neque sed id autem tempore dolore minima voluptate voluptatem.
+                            Ipsum, quisquam enim libero sed nesciunt qui sequi. Voluptatum, voluptate?</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <p><i class="fa-regular fa-circle" style="color:blue; padding: 0px 10px;"></i>Lorem ipsum dolor sit amet consectetur.</p>
+                            <p><i class="fa-regular fa-circle" style="color:blue; padding: 0px 10px;"></i>Lorem ipsum dolor sit, amet consectetur aceat ad atque expedita, ratione sint pariatur?</p>
+                            <p><i class="fa-regular fa-circle" style="color:blue; padding: 0px 10px;"></i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, voluptatem!</p>
+                        </div>
+
+                        <!-----------------FAQs--------------- -->
+
+                        <div class="col-sm-12" style="padding: 45px 0px; border-bottom: 1px dashed blue;" id="recovery">
+                            <h1 style="font-size: 35px; padding-bottom: 20px;">Treatment Recovery Tip</h1>
+                            <!-- --------------------accordian------------- -->
+                            <div id="accordion">
+                                <div class="card">
+                                    <div class="card-header" id="headingOne">
+                                        <h5 class="mb-0">
+                                            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                         <i class="fa-solid fa-plus"></i> How do I know the clinic I am seraching is verified?
+                                      </button>
+                                        </h5>
+                                    </div>
+
+                                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                                        <div class="card-body">
+                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
+                                            on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings
+                                            occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header" id="headingTwo">
+                                        <h5 class="mb-0">
+                                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                <i class="fa-solid fa-plus"></i> How do I know the clinic I am seraching is verified?
+                                      </button>
+                                        </h5>
+                                    </div>
+                                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                                        <div class="card-body">
+                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
+                                            on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings
+                                            occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-header" id="headingThree">
+                                        <h5 class="mb-0">
+                                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                <i class="fa-solid fa-plus"></i> How do I know the clinic I am seraching is verified?
+                                      </button>
+                                        </h5>
+                                    </div>
+                                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                                        <div class="card-body">
+                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
+                                            on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings
+                                            occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="card">
+                    <div class="card-body side-card">
+                        <h1>Need Help?</h1>
+                        <p>Just let us know. We will be happy to assist you</p>
+                        <input type="text" name="" id="" placeholder="Full Name">
+                        <input type="text" name="" id="" placeholder="Email">
+                        <input type="text" name="" id="" placeholder="Phone Number">
+                        <textarea rows="3" placeholder="Describe Your Treatment Requirement"></textarea>
+                        <button class="form-btn">Send Enquire</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ----------------------patient stories---------------------- -->
+    <section class="pt-5 pb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <h3 class="mb-3">Patient Stories and video</h3>
+                </div>
+                <div class="col-6 text-right">
+                    <a class="btn btn-primary mb-3 mr-1" href="#carouselExampleIndicators2" role="button" data-slide="prev">
+                        <i class="fa fa-arrow-left"></i>
+                    </a>
+                    <a class="btn btn-primary mb-3" href="#carouselExampleIndicators2" role="button" data-slide="next">
+                        <i class="fa fa-arrow-right"></i>
+                    </a>
+                </div>
+                <div class="col-12">
+                    <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="row">
+                                    <div class="col-md-4 mb-3">
+                                        <div class="card mycard">
+                                            <p id="title">Special title treatment</p>
+                                            <img class="img-fluid" alt="100%x280" src="https://source.unsplash.com/200x120/?doctor" />
+                                            <div class="card-body ">
+                                                <h4 class="card-title">Special title treatment</h4>
+                                                <p class="card-text">
+                                                    With supporting text below as a natural lead-in to additional content.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <div class="card mycard">
+                                            <p id="title">Special title treatment</p>
+                                            <img class="img-fluid" alt="100%x280" src="https://source.unsplash.com/200x120/?medical" />
+                                            <div class="card-body ">
+                                                <h4 class="card-title">Special title treatment</h4>
+                                                <p class="card-text">
+                                                    With supporting text below as a natural lead-in to additional content.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <div class="card mycard">
+                                            <p id="title">Special title treatment</p>
+                                            <img class="img-fluid" alt="100%x280" src="https://source.unsplash.com/200x120/?hospital" />
+                                            <div class="card-body ">
+                                                <h4 class="card-title">Special title treatment</h4>
+                                                <p class="card-text">
+                                                    With supporting text below as a natural lead-in to additional content.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-md-4 mb-3">
+                                        <div class="card mycard">
+                                            <p id="title">Special title treatment</p>
+                                            <img class="img-fluid" alt="100%x280" src="https://source.unsplash.com/200x120/?doctor" />
+                                            <div class="card-body ">
+                                                <h4 class="card-title">Special title treatment</h4>
+                                                <p class="card-text">
+                                                    With supporting text below as a natural lead-in to additional content.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <div class="card mycard">
+                                            <p id="title">Special title treatment</p>
+                                            <img class="img-fluid" alt="100%x280" src="https://source.unsplash.com/200x120/?doctor" />
+                                            <div class="card-body ">
+                                                <h4 class="card-title">Special title treatment</h4>
+                                                <p class="card-text">
+                                                    With supporting text below as a natural lead-in to additional content.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <div class="card mycard">
+                                            <p id="title">Special title treatment</p>
+                                            <img class="img-fluid" alt="100%x280" src="https://source.unsplash.com/200x120/?doctor" />
+                                            <div class="card-body ">
+                                                <h4 class="card-title">Special title treatment</h4>
+                                                <p class="card-text">
+                                                    With supporting text below as a natural lead-in to additional content.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-md-4 mb-3">
+                                        <div class="card mycard">
+                                            <p id="title">Special title treatment</p>
+                                            <img class="img-fluid" alt="100%x280" src="https://source.unsplash.com/200x120/?doctor" />
+                                            <div class="card-body ">
+                                                <h4 class="card-title">Special title treatment</h4>
+                                                <p class="card-text">
+                                                    With supporting text below as a natural lead-in to additional content.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <div class="card mycard">
+                                            <p id="title">Special title treatment</p>
+                                            <img class="img-fluid" alt="100%x280" src="https://source.unsplash.com/200x120/?doctor" />
+                                            <div class="card-body ">
+                                                <h4 class="card-title">Special title treatment</h4>
+                                                <p class="card-text">
+                                                    With supporting text below as a natural lead-in to additional content.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <div class="card mycard">
+                                            <p id="title">Special title treatment</p>
+                                            <img class="img-fluid" alt="100%x280" src="https://source.unsplash.com/200x120/?doctor" />
+                                            <div class="card-body ">
+                                                <h4 class="card-title">Special title treatment</h4>
+                                                <p class="card-text">
+                                                    With supporting text below as a natural lead-in to additional content.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ----------------------doctor-slider------------------------- -->
+    <div class="container-fluid" style="background-color: #caecec; padding: 30px!important;">
+        <div class="row">
+            <div class="col-sm-12">
+                <h3 class="big-h3">Doctors</h3>
+                <h1 class="big-h1">The Orthopaedic <span style="color: rgb(0, 140, 255);">Doctor</span></h1>
+            </div>
+            <div class="col-sm-12">
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators" style="z-index: 200!important;">
+                        <li data-target="#carouselExampleIndicators" style="color: rgb(64, 0, 255)!important;" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" style="color: rgb(64, 0, 255)!important;" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" style="color: rgb(64, 0, 255)!important;" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="container" style="margin-bottom: 60px;">
+                                <div class="row">
+                                    <div class="col-sm-4" style="display: flex; align-items: center; justify-content: center;">
+                                        <div class="card" style="width: 18rem;">
+                                            <img class="card-img-top" src="./doc.png" alt="Card image cap" style="padding: 10px;">
+                                            <div class="card-body" style="text-align: center;">
+                                                <h5 class="card-title" style="color:red; font-style: italic;">Dr. Faique Falke</h5>
+                                                <p style="color: black; font-weight: 500;">Musaffah Industrial - Abu Dabhi</p>
+                                                <p style="color: rgb(111, 111, 111); font-weight: 500;">Doctor Degree & Specialist</p>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4" style="display: flex; align-items: center; justify-content: center;">
+                                        <div class="card" style="width: 18rem;">
+                                            <img class="card-img-top" src="./doc.png" alt="Card image cap" style="padding: 10px;">
+                                            <div class="card-body" style="text-align: center;">
+                                                <h5 class="card-title" style="color:red; font-style: italic;">Dr. Faique Falke</h5>
+                                                <p style="color: black; font-weight: 500;">Musaffah Industrial - Abu Dabhi</p>
+                                                <p style="color: rgb(111, 111, 111); font-weight: 500;">Doctor Degree & Specialist</p>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4" style="display: flex; align-items: center; justify-content: center;">
+                                        <div class="card" style="width: 18rem;">
+                                            <img class="card-img-top" src="./doc.png" alt="Card image cap" style="padding: 10px;">
+                                            <div class="card-body" style="text-align: center;">
+                                                <h5 class="card-title" style="color:red; font-style: italic;">Dr. Faique Falke</h5>
+                                                <p style="color: black; font-weight: 500;">Musaffah Industrial - Abu Dabhi</p>
+                                                <p style="color: rgb(111, 111, 111); font-weight: 500;">Doctor Degree & Specialist</p>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="container" style="margin-bottom: 60px;">
+                                <div class="row">
+                                    <div class="col-sm-4" style="display: flex; align-items: center; justify-content: center;">
+                                        <div class="card" style="width: 18rem;">
+                                            <img class="card-img-top" src="./doc.png" alt="Card image cap" style="padding: 10px;">
+                                            <div class="card-body" style="text-align: center;">
+                                                <h5 class="card-title" style="color:red; font-style: italic;">Dr. Faique Falke</h5>
+                                                <p style="color: black; font-weight: 500;">Musaffah Industrial - Abu Dabhi</p>
+                                                <p style="color: rgb(111, 111, 111); font-weight: 500;">Doctor Degree & Specialist</p>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4" style="display: flex; align-items: center; justify-content: center;">
+                                        <div class="card" style="width: 18rem;">
+                                            <img class="card-img-top" src="./doc.png" alt="Card image cap" style="padding: 10px;">
+                                            <div class="card-body" style="text-align: center;">
+                                                <h5 class="card-title" style="color:red; font-style: italic;">Dr. Faique Falke</h5>
+                                                <p style="color: black; font-weight: 500;">Musaffah Industrial - Abu Dabhi</p>
+                                                <p style="color: rgb(111, 111, 111); font-weight: 500;">Doctor Degree & Specialist</p>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4" style="display: flex; align-items: center; justify-content: center;">
+                                        <div class="card" style="width: 18rem;">
+                                            <img class="card-img-top" src="./doc.png" alt="Card image cap" style="padding: 10px;">
+                                            <div class="card-body" style="text-align: center;">
+                                                <h5 class="card-title" style="color:red; font-style: italic;">Dr. Faique Falke</h5>
+                                                <p style="color: black; font-weight: 500;">Musaffah Industrial - Abu Dabhi</p>
+                                                <p style="color: rgb(111, 111, 111); font-weight: 500;">Doctor Degree & Specialist</p>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="container" style="margin-bottom: 60px;">
+                                <div class="row">
+                                    <div class="col-sm-4" style="display: flex; align-items: center; justify-content: center;">
+                                        <div class="card" style="width: 18rem;">
+                                            <img class="card-img-top" src="./doc.png" alt="Card image cap" style="padding: 10px;">
+                                            <div class="card-body" style="text-align: center;">
+                                                <h5 class="card-title" style="color:red; font-style: italic;">Dr. Faique Falke</h5>
+                                                <p style="color: black; font-weight: 500;">Musaffah Industrial - Abu Dabhi</p>
+                                                <p style="color: rgb(111, 111, 111); font-weight: 500;">Doctor Degree & Specialist</p>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4" style="display: flex; align-items: center; justify-content: center;">
+                                        <div class="card" style="width: 18rem;">
+                                            <img class="card-img-top" src="./doc.png" alt="Card image cap" style="padding: 10px;">
+                                            <div class="card-body" style="text-align: center;">
+                                                <h5 class="card-title" style="color:red; font-style: italic;">Dr. Faique Falke</h5>
+                                                <p style="color: black; font-weight: 500;">Musaffah Industrial - Abu Dabhi</p>
+                                                <p style="color: rgb(111, 111, 111); font-weight: 500;">Doctor Degree & Specialist</p>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4" style="display: flex; align-items: center; justify-content: center;">
+                                        <div class="card" style="width: 18rem;">
+                                            <img class="card-img-top" src="./doc.png" alt="Card image cap" style="padding: 10px;">
+                                            <div class="card-body" style="text-align: center;">
+                                                <h5 class="card-title" style="color:red; font-style: italic;">Dr. Faique Falke</h5>
+                                                <p style="color: black; font-weight: 500;">Musaffah Industrial - Abu Dabhi</p>
+                                                <p style="color: rgb(111, 111, 111); font-weight: 500;">Doctor Degree & Specialist</p>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-------------------------HOSPITAL -----------------------------  -->
+    <div class="container-fluid" style="background-color: #ffffff; padding: 30px!important;">
+        <div class="row">
+            <div class="col-sm-12">
+                <h3 class="big-h3">Hospital</h3>
+                <h1 class="big-h1">Recommended <span style="color: rgb(0, 140, 255);">Hospitals</span></h1>
+            </div>
+            <div class="col-sm-12">
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators" style="z-index: 200!important;">
+                        <li data-target="#carouselExampleIndicators" style="color: rgb(64, 0, 255)!important;" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" style="color: rgb(64, 0, 255)!important;" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" style="color: rgb(64, 0, 255)!important;" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="container" style="margin-bottom: 60px;">
+                                <div class="row">
+                                    <div class="col-sm-4" style="display: flex; align-items: center; justify-content: center;">
+                                        <div class="card" style="width: 23rem; border: 1px dashed red!important;">
+                                            <img class="card-img-top" src="./hos1.png" alt="Card image cap">
+                                            <div class="card-body" style="text-align: center;">
+                                                <p style="color: black; font-weight: 500; font-size: 26px;">Appolo Hospital</p>
+                                                <h5 class="card-title" style="color:red; font-style: italic;">Banglore</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4" style="display: flex; align-items: center; justify-content: center;">
+                                        <div class="card" style="width: 23rem; border: 1px dashed red!important;">
+                                            <img class="card-img-top" src="./hos2.png" alt="Card image cap">
+                                            <div class="card-body" style="text-align: center;">
+                                                <p style="color: black; font-weight: 500; font-size: 26px;">Medanta Hospital</p>
+                                                <h5 class="card-title" style="color:red; font-style: italic;">Gurgoan</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4" style="display: flex; align-items: center; justify-content: center;">
+                                        <div class="card" style="width: 23rem; border: 1px dashed red!important;">
+                                            <img class="card-img-top" src="./hos3.png" alt="Card image cap">
+                                            <div class="card-body" style="text-align: center;">
+                                                <p style="color: black; font-weight: 500; font-size: 26px;">Jaslok Hospital</p>
+                                                <h5 class="card-title" style="color:red; font-style: italic;">Mumbai</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="container" style="margin-bottom: 60px;">
+                                <div class="row">
+                                    <div class="col-sm-4" style="display: flex; align-items: center; justify-content: center;">
+                                        <div class="card" style="width: 23rem; border: 1px dashed red!important;">
+                                            <img class="card-img-top" src="./hos1.png" alt="Card image cap">
+                                            <div class="card-body" style="text-align: center;">
+                                                <p style="color: black; font-weight: 500; font-size: 26px;">Appolo Hospital</p>
+                                                <h5 class="card-title" style="color:red; font-style: italic;">Banglore</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4" style="display: flex; align-items: center; justify-content: center;">
+                                        <div class="card" style="width: 23rem; border: 1px dashed red!important;">
+                                            <img class="card-img-top" src="./hos2.png" alt="Card image cap">
+                                            <div class="card-body" style="text-align: center;">
+                                                <p style="color: black; font-weight: 500; font-size: 26px;">Medanta Hospital</p>
+                                                <h5 class="card-title" style="color:red; font-style: italic;">Gurgoan</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4" style="display: flex; align-items: center; justify-content: center;">
+                                        <div class="card" style="width: 23rem; border: 1px dashed red!important;">
+                                            <img class="card-img-top" src="./hos3.png" alt="Card image cap">
+                                            <div class="card-body" style="text-align: center;">
+                                                <p style="color: black; font-weight: 500; font-size: 26px;">Jaslok Hospital</p>
+                                                <h5 class="card-title" style="color:red; font-style: italic;">Mumbai</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="container" style="margin-bottom: 60px;">
+                                <div class="row">
+                                    <div class="col-sm-4" style="display: flex; align-items: center; justify-content: center;">
+                                        <div class="card" style="width: 23rem; border: 1px dashed red!important;">
+                                            <img class="card-img-top" src="./hos1.png" alt="Card image cap">
+                                            <div class="card-body" style="text-align: center;">
+                                                <p style="color: black; font-weight: 500; font-size: 26px;">Appolo Hospital</p>
+                                                <h5 class="card-title" style="color:red; font-style: italic;">Banglore</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4" style="display: flex; align-items: center; justify-content: center;">
+                                        <div class="card" style="width: 23rem; border: 1px dashed red!important;">
+                                            <img class="card-img-top" src="./hos2.png" alt="Card image cap">
+                                            <div class="card-body" style="text-align: center;">
+                                                <p style="color: black; font-weight: 500; font-size: 26px;">Medanta Hospital</p>
+                                                <h5 class="card-title" style="color:red; font-style: italic;">Gurgoan</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4" style="display: flex; align-items: center; justify-content: center;">
+                                        <div class="card" style="width: 23rem; border: 1px dashed red!important;">
+                                            <img class="card-img-top" src="./hos3.png" alt="Card image cap">
+                                            <div class="card-body" style="text-align: center;">
+                                                <p style="color: black; font-weight: 500; font-size: 26px;">Jaslok Hospital</p>
+                                                <h5 class="card-title" style="color:red; font-style: italic;">Mumbai</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p style="color: black; text-align: center; font-weight: 500; font-size: 20px;">Don't hesitate contact us for better help and service. <span style="color: red;">Ecplore All Hospital</span></p>
+    </div>
+
+    <!-- -----------------GET IN TOUCH----------------------------------- -->
+    <div class="get-in-touch">
+        <h4>Stay Healthy and Stay Strong</h4>
+        <h1>We have team of healthcare experts</h1>
+        <div class="button-num">
+            <button class="get-btn">Get In Touch</button>
+            <h3 style="border-left: 2px solid white;"> +91 85469 78745</h3>
+        </div>
+    </div>
+
+    <!-- ---------------------footer----------------------- -->
+    <div class="container-fluid footer-container">
+        <div class="row footer-upper-row">
+            <div class="col-sm-3">
+                <h4 class="footer-title">Important Links</h4>
+                <h6><i class="fa-solid fa-minus footer-icon"></i> Home</h6>
+                <h6><i class="fa-solid fa-minus footer-icon"></i> About </h6>
+                <h6><i class="fa-solid fa-minus footer-icon"></i> FAQs</h6>
+                <h6><i class="fa-solid fa-minus footer-icon"></i> Blog</h6>
+                <h6><i class="fa-solid fa-minus footer-icon"></i> Contact Us</h6>
+            </div>
+
+            <div class="col-sm-3">
+                <h4 class="footer-title">Top Hospital</h4>
+                <h6><i class="fa-solid fa-minus footer-icon"></i> Apollo Hospital Delhi</h6>
+                <h6><i class="fa-solid fa-minus footer-icon"></i> Medanta Hospital Gurgaon </h6>
+                <h6><i class="fa-solid fa-minus footer-icon"></i> Max Hospital Delhi</h6>
+                <h6><i class="fa-solid fa-minus footer-icon"></i> Jaslok Hospital Mumbai</h6>
+                <h6><i class="fa-solid fa-minus footer-icon"></i> Artemis Hospital Gurgaon</h6>
+                <h6><i class="fa-solid fa-minus footer-icon"></i> Forties Hospital Gurgaon</h6>
+                <h6><i class="fa-solid fa-minus footer-icon"></i> View All</h6>
+            </div>
+
+            <div class="col-sm-3">
+                <h4 class="footer-title">Speciality Treatment</h4>
+                <h6><i class="fa-solid fa-minus footer-icon"></i> Knee Replacement Surgeon</h6>
+                <h6><i class="fa-solid fa-minus footer-icon"></i> Unologist </h6>
+                <h6><i class="fa-solid fa-minus footer-icon"></i> Spine Surgeon</h6>
+                <h6><i class="fa-solid fa-minus footer-icon"></i> ENT Surgeon</h6>
+                <h6><i class="fa-solid fa-minus footer-icon"></i> Orthopedic</h6>
+                <h6><i class="fa-solid fa-minus footer-icon"></i> Cardiologist</h6>
+                <h6><i class="fa-solid fa-minus footer-icon"></i> View All</h6>
+            </div>
+
+            <div class="col-sm-3 joincol">
+                <div class="joincard">
+                    <div class="upper-side">
+                        <div class="upper-icon">
+                            <img src="./add.png" alt="">
+                        </div>
+                        <div class="right-info">
+                            <p class="right-title">Are You a doctor/ Hospital?</p>
+                            <h4 class="desc">Join Mediretreats</h4>
+                        </div>
+                    </div>
+                    <p class="lower-desc">Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+                </div>
+                <h4 class="footer-title" style="margin-top: 10px;">Medical Turison Destination</h4>
+                <h6><i class="fa-solid fa-minus footer-icon"></i> Medical Tourism in India</h6>
+                <h6><i class="fa-solid fa-minus footer-icon"></i> Medical Tourism in Sri Lanka </h6>
+                <h6><i class="fa-solid fa-minus footer-icon"></i> Medical Tourism in UAE</h6>
+                <h6><i class="fa-solid fa-minus footer-icon"></i> View All</h6>
+                </div>
+        </div>
+
+        <div class="row down-row">
+            <div class="col-sm-3">
+                <img src="./logo-white.png" alt="">
+            </div>
+            <div class="col-sm-7 info-col">
+                <h3>About Afiyan Mediretreats</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum dolor quisquam explicabo dolore distinctio? Libero modi asperiores quaerat excepturi rerum deserunt, temporibus beatae voluptates, quidem quod accusantium atque tenetur facilis.
+                    Fugit ab totam dolore necessitatibus minima? Assumenda exercitationem molestias culpa, architecto quia repudiandae dolor minima fugit delectus corporis saepe officia?</p>
+            </div>
+            <div class="col-sm-2 social-col">
+                <h3>Follow Us On</h3>
+                <div class="socila-icon-div">
+                    <img src="facebook.png" alt="">
+                    <img src="twitter.png" alt="">
+                    <img src="instagram.png" alt="">
+                    <img src="social.png" alt="">
+                </div>
+                <p style="margin-top: 24px; font-size: 20px;">Customer Service</p>
+                <h4 style="color: rgb(0, 140, 255);">+91 74125 78956</h4>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid copyright-container">
+        <div class="row copy-right-div">
+            <div class="col-sm-8">
+                Copyright 2023 Lorem ipsum dolor sit amet consectetur adipisicing.
+            </div>
+            <div class="col-sm-2">
+                Terms and Condition
+            </div>
+            <div class="col-sm-2">
+                Privacy Policy
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
